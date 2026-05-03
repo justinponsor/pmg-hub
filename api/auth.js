@@ -6,11 +6,9 @@ export default function handler(req, res) {
   const scope = [
     'instagram_basic',
     'instagram_content_publish',
-    'instagram_manage_comments',
     'pages_show_list',
     'pages_read_engagement',
     'pages_manage_posts',
-    'pages_manage_engagement',
     'business_management',
   ].join(',');
 
