@@ -2,6 +2,8 @@
   "version": 2,
   "routes": [
     { "src": "/api/(.*)", "dest": "/api/$1" },
+    { "src": "/privacy", "dest": "/privacy.html" },
+    { "src": "/deletion", "dest": "/deletion.html" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
