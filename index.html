@@ -323,6 +323,60 @@
   .cal-post-row:hover .cal-post-del{opacity:1;}
   .cal-post-del:hover{color:var(--red);}
 
+
+
+  /* REPORTS */
+  .report-client-card{background:var(--white);border:1px solid var(--border);border-radius:14px;overflow:hidden;margin-bottom:16px;box-shadow:var(--shadow-sm);}
+  .report-client-header{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--border);cursor:pointer;transition:background 0.12s;}
+  .report-client-header:hover{background:var(--bg);}
+  .report-client-header-left{display:flex;align-items:center;gap:12px;}
+  .report-client-logo{width:36px;height:36px;border-radius:7px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--gray);flex-shrink:0;}
+  .report-client-logo img{width:100%;height:100%;object-fit:contain;padding:3px;}
+  .report-client-name{font-size:14px;font-weight:700;color:var(--text);}
+  .report-client-sub{font-size:11px;color:var(--muted);margin-top:2px;}
+  .report-client-body{padding:16px 18px;display:none;}
+  .report-client-body.open{display:block;}
+  .report-platform-section{margin-bottom:20px;}
+  .report-platform-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin-bottom:10px;display:flex;align-items:center;gap:6px;}
+  .report-metrics-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px;margin-bottom:12px;}
+  .report-metric{background:var(--bg);border:1px solid var(--border);border-radius:9px;padding:10px 12px;}
+  .report-metric-label{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.06em;color:var(--muted);margin-bottom:4px;}
+  .report-metric-value{font-size:20px;font-weight:700;color:var(--text);line-height:1;}
+  .report-metric-change{font-size:11px;margin-top:3px;font-weight:600;}
+  .change-up{color:#15803d;}
+  .change-down{color:var(--red);}
+  .report-top-posts{margin-top:12px;}
+  .report-top-posts-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.07em;color:var(--muted);margin-bottom:8px;}
+  .report-post-row{display:flex;align-items:center;gap:10px;padding:8px 10px;background:var(--bg);border-radius:8px;margin-bottom:6px;border:1px solid var(--border);}
+  .report-post-thumb{width:36px;height:36px;border-radius:6px;background:var(--gray);display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;}
+  .report-post-info{flex:1;min-width:0;}
+  .report-post-caption{font-size:12px;font-weight:500;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .report-post-stats{font-size:11px;color:var(--muted);margin-top:2px;}
+  .summary-stat{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:14px 16px;box-shadow:var(--shadow-sm);}
+  .summary-stat-label{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:0.07em;color:var(--muted);margin-bottom:6px;}
+  .summary-stat-value{font-size:24px;font-weight:700;color:var(--text);line-height:1;}
+  .summary-stat-sub{font-size:11px;color:var(--muted);margin-top:3px;}
+
+  /* CONNECT & COMMENTS */
+  .comment-card{background:var(--white);border:1px solid var(--border);border-radius:12px;padding:14px 16px;margin-bottom:10px;transition:border-color 0.15s;cursor:pointer;}
+  .comment-card:hover{border-color:var(--sky-mid);}
+  .comment-card.selected{border-color:var(--sky);background:var(--sky-light);}
+  .comment-card.dismissed{opacity:0.4;}
+  .comment-meta{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;flex-wrap:wrap;gap:6px;}
+  .comment-account{font-size:12px;font-weight:700;color:var(--text);}
+  .comment-time{font-size:11px;color:var(--muted);}
+  .comment-post{font-size:11px;color:var(--text2);margin-bottom:6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .comment-text{font-size:13px;color:var(--text);line-height:1.5;margin-bottom:10px;}
+  .comment-actions{display:flex;gap:6px;flex-wrap:wrap;}
+  .comment-reply-btn{font-size:11px;font-weight:600;padding:5px 10px;border-radius:7px;background:var(--sky-light);color:var(--sky-dark);border:1px solid var(--sky-mid);cursor:pointer;font-family:var(--sans);}
+  .comment-reply-btn:hover{background:var(--sky-mid);}
+  .comment-dismiss-btn{font-size:11px;font-weight:600;padding:5px 10px;border-radius:7px;background:var(--gray);color:var(--muted);border:1px solid var(--border);cursor:pointer;font-family:var(--sans);}
+  .comment-dismiss-btn:hover{color:var(--red);border-color:var(--red);background:var(--red-light);}
+  .comment-plat-badge{font-size:10px;font-weight:700;padding:2px 7px;border-radius:5px;}
+  .plat-ig{background:#fdf0ff;color:#7c3aed;}
+  .plat-fb{background:#eff6ff;color:#1d4ed8;}
+  .replied-badge{font-size:10px;font-weight:700;padding:2px 7px;border-radius:5px;background:var(--green-light);color:#15803d;}
+
   /* REX STORY INBOX */
   .rex-story-card{background:var(--bg);border:1px solid var(--border);border-radius:10px;overflow:hidden;margin-bottom:10px;transition:border-color 0.15s;}
   .rex-story-card:hover{border-color:var(--sky-mid);}
@@ -422,11 +476,24 @@
   </div>
   <div class="sidebar-divider"></div>
   <div class="sidebar-section">
+    <span class="sidebar-label">Engage</span>
+    <button class="nav-tab" onclick="switchTab('comments')">
+      <svg class="tab-icon-svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 10a2 2 0 01-2 2H5l-3 3V4a2 2 0 012-2h8a2 2 0 012 2z"/></svg>
+      <span class="tab-label">Comments</span>
+      <span class="tab-badge" id="badge-comments">0</span>
+    </button>
+    <button class="nav-tab" onclick="switchTab('connect')">
+      <svg class="tab-icon-svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 3a4 4 0 010 5.66l-1.5 1.5"/><path d="M6 13a4 4 0 010-5.66l1.5-1.5"/><path d="M9 7l-2 2"/></svg>
+      <span class="tab-label">Connect Accounts</span>
+    </button>
+  </div>
+  <div class="sidebar-divider"></div>
+  <div class="sidebar-section">
     <span class="sidebar-label">Coming soon</span>
-    <div class="nav-tab" style="cursor:default;opacity:0.4;">
-      <svg class="tab-icon-svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8 1a7 7 0 100 14A7 7 0 008 1z"/><path d="M8 5v3l2 2"/></svg>
-      <span class="tab-label">Analytics</span>
-    </div>
+    <button class="nav-tab" onclick="switchTab('reports')">
+      <svg class="tab-icon-svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h2V8H2zM6 12h2V4H6zM10 12h2V6h-2z"/><path d="M1 12h14"/></svg>
+      <span class="tab-label">Reports</span>
+    </button>
     <div class="nav-tab" style="cursor:default;opacity:0.4;">
       <svg class="tab-icon-svg" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="5" r="3"/><path d="M2 14c0-3 2.7-5 6-5s6 2 6 5"/></svg>
       <span class="tab-label">Ambassadors</span>
@@ -693,6 +760,346 @@
 
 
 </div>
+
+  <!-- CONNECT ACCOUNTS -->
+  <div class="tab-view" id="tab-connect">
+    <div class="section-head" style="margin-bottom:6px"><h2>Connect accounts</h2></div>
+    <p style="font-size:13px;color:var(--muted);margin-bottom:24px;line-height:1.6">Connect each client's Instagram and Facebook accounts so PMG Hub can post, schedule, and pull analytics on their behalf. Each client connects once — you manage everything from here forever.</p>
+
+    <div style="background:var(--sky-light);border:1px solid var(--sky-mid);border-radius:12px;padding:14px 16px;margin-bottom:24px;display:flex;align-items:center;gap:12px;">
+      <svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="var(--sky-dark)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="7"/><path d="M8 5v3l2 2"/></svg>
+      <div>
+        <div style="font-size:13px;font-weight:700;color:var(--sky-dark);">Meta App Review in progress</div>
+        <div style="font-size:12px;color:var(--sky-dark);opacity:0.8;margin-top:2px;">Once approved (5-7 days), the Connect buttons below will go live. In the meantime you can see the flow.</div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;">
+
+      <div class="pub-card" style="padding:18px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
+          <div id="connect-logo-oxbow" style="width:44px;height:44px;border-radius:8px;background:var(--gray);display:flex;align-items:center;justify-content:center;overflow:hidden;border:1px solid var(--border);flex-shrink:0;"></div>
+          <div>
+            <div style="font-size:14px;font-weight:700;color:var(--text);">Oxbow</div>
+            <div style="font-size:11px;color:var(--muted);margin-top:2px;">Powersports brand</div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:14px;">
+          <div class="connect-status-row" id="status-ig-oxbow">
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 10px;background:var(--bg);border-radius:8px;border:1px solid var(--border);">
+              <div style="display:flex;align-items:center;gap:8px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+                <span style="font-size:12px;font-weight:600;color:var(--text);">Instagram</span>
+              </div>
+              <span class="status-gray">Not connected</span>
+            </div>
+          </div>
+          <div class="connect-status-row" id="status-fb-oxbow">
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 10px;background:var(--bg);border-radius:8px;border:1px solid var(--border);">
+              <div style="display:flex;align-items:center;gap:8px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                <span style="font-size:12px;font-weight:600;color:var(--text);">Facebook</span>
+              </div>
+              <span class="status-gray">Not connected</span>
+            </div>
+          </div>
+        </div>
+        <button onclick="connectClient('oxbow')" style="width:100%;background:var(--black);color:#fff;font-family:var(--sans);font-size:12px;font-weight:700;padding:9px;border:none;border-radius:9px;cursor:pointer;transition:background 0.15s;display:flex;align-items:center;justify-content:center;gap:6px;" onmouseover="this.style.background='var(--sky-dark)'" onmouseout="this.style.background='var(--black)'">
+          <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 3a4 4 0 010 5.66l-1.5 1.5"/><path d="M6 13a4 4 0 010-5.66l1.5-1.5"/></svg>
+          Connect Oxbow
+        </button>
+      </div>
+
+      <div class="pub-card" style="padding:18px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
+          <div id="connect-logo-caliber" style="width:44px;height:44px;border-radius:8px;background:var(--gray);display:flex;align-items:center;justify-content:center;overflow:hidden;border:1px solid var(--border);flex-shrink:0;"></div>
+          <div>
+            <div style="font-size:14px;font-weight:700;color:var(--text);">Caliber</div>
+            <div style="font-size:11px;color:var(--muted);margin-top:2px;">Month-ahead scheduling</div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:14px;">
+          <div class="connect-status-row" id="status-ig-caliber">
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 10px;background:var(--bg);border-radius:8px;border:1px solid var(--border);">
+              <div style="display:flex;align-items:center;gap:8px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+                <span style="font-size:12px;font-weight:600;color:var(--text);">Instagram</span>
+              </div>
+              <span class="status-gray">Not connected</span>
+            </div>
+          </div>
+          <div class="connect-status-row" id="status-fb-caliber">
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 10px;background:var(--bg);border-radius:8px;border:1px solid var(--border);">
+              <div style="display:flex;align-items:center;gap:8px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                <span style="font-size:12px;font-weight:600;color:var(--text);">Facebook</span>
+              </div>
+              <span class="status-gray">Not connected</span>
+            </div>
+          </div>
+        </div>
+        <button onclick="connectClient('caliber')" style="width:100%;background:var(--black);color:#fff;font-family:var(--sans);font-size:12px;font-weight:700;padding:9px;border:none;border-radius:9px;cursor:pointer;transition:background 0.15s;display:flex;align-items:center;justify-content:center;gap:6px;" onmouseover="this.style.background='var(--sky-dark)'" onmouseout="this.style.background='var(--black)'">
+          <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 3a4 4 0 010 5.66l-1.5 1.5"/><path d="M6 13a4 4 0 010-5.66l1.5-1.5"/></svg>
+          Connect Caliber
+        </button>
+      </div>
+
+      <div class="pub-card" style="padding:18px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
+          <div id="connect-logo-cheetah" style="width:44px;height:44px;border-radius:8px;background:var(--gray);display:flex;align-items:center;justify-content:center;overflow:hidden;border:1px solid var(--border);flex-shrink:0;"></div>
+          <div>
+            <div style="font-size:14px;font-weight:700;color:var(--text);">Cheetah Factory Racing</div>
+            <div style="font-size:11px;color:var(--muted);margin-top:2px;">Racing brand</div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:14px;">
+          <div class="connect-status-row" id="status-ig-cheetah">
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 10px;background:var(--bg);border-radius:8px;border:1px solid var(--border);">
+              <div style="display:flex;align-items:center;gap:8px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+                <span style="font-size:12px;font-weight:600;color:var(--text);">Instagram</span>
+              </div>
+              <span class="status-gray">Not connected</span>
+            </div>
+          </div>
+          <div class="connect-status-row" id="status-fb-cheetah">
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 10px;background:var(--bg);border-radius:8px;border:1px solid var(--border);">
+              <div style="display:flex;align-items:center;gap:8px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                <span style="font-size:12px;font-weight:600;color:var(--text);">Facebook</span>
+              </div>
+              <span class="status-gray">Not connected</span>
+            </div>
+          </div>
+        </div>
+        <button onclick="connectClient('cheetah')" style="width:100%;background:var(--black);color:#fff;font-family:var(--sans);font-size:12px;font-weight:700;padding:9px;border:none;border-radius:9px;cursor:pointer;transition:background 0.15s;display:flex;align-items:center;justify-content:center;gap:6px;" onmouseover="this.style.background='var(--sky-dark)'" onmouseout="this.style.background='var(--black)'">
+          <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 3a4 4 0 010 5.66l-1.5 1.5"/><path d="M6 13a4 4 0 010-5.66l1.5-1.5"/></svg>
+          Connect Cheetah Factory Racing
+        </button>
+      </div>
+
+      <div class="pub-card" style="padding:18px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
+          <div id="connect-logo-fxgroup" style="width:44px;height:44px;border-radius:8px;background:var(--gray);display:flex;align-items:center;justify-content:center;overflow:hidden;border:1px solid var(--border);flex-shrink:0;"></div>
+          <div>
+            <div style="font-size:14px;font-weight:700;color:var(--text);">FX Group</div>
+            <div style="font-size:11px;color:var(--muted);margin-top:2px;">Ambassador management</div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:14px;">
+          <div class="connect-status-row" id="status-ig-fxgroup">
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 10px;background:var(--bg);border-radius:8px;border:1px solid var(--border);">
+              <div style="display:flex;align-items:center;gap:8px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+                <span style="font-size:12px;font-weight:600;color:var(--text);">Instagram</span>
+              </div>
+              <span class="status-gray">Not connected</span>
+            </div>
+          </div>
+          <div class="connect-status-row" id="status-fb-fxgroup">
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 10px;background:var(--bg);border-radius:8px;border:1px solid var(--border);">
+              <div style="display:flex;align-items:center;gap:8px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                <span style="font-size:12px;font-weight:600;color:var(--text);">Facebook</span>
+              </div>
+              <span class="status-gray">Not connected</span>
+            </div>
+          </div>
+        </div>
+        <button onclick="connectClient('fxgroup')" style="width:100%;background:var(--black);color:#fff;font-family:var(--sans);font-size:12px;font-weight:700;padding:9px;border:none;border-radius:9px;cursor:pointer;transition:background 0.15s;display:flex;align-items:center;justify-content:center;gap:6px;" onmouseover="this.style.background='var(--sky-dark)'" onmouseout="this.style.background='var(--black)'">
+          <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 3a4 4 0 010 5.66l-1.5 1.5"/><path d="M6 13a4 4 0 010-5.66l1.5-1.5"/></svg>
+          Connect FX Group
+        </button>
+      </div>
+
+      <div class="pub-card" style="padding:18px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
+          <div id="connect-logo-3c" style="width:44px;height:44px;border-radius:8px;background:var(--gray);display:flex;align-items:center;justify-content:center;overflow:hidden;border:1px solid var(--border);flex-shrink:0;"></div>
+          <div>
+            <div style="font-size:14px;font-weight:700;color:var(--text);">3C Guiding</div>
+            <div style="font-size:11px;color:var(--muted);margin-top:2px;">Guiding service</div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:14px;">
+          <div class="connect-status-row" id="status-ig-3c">
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 10px;background:var(--bg);border-radius:8px;border:1px solid var(--border);">
+              <div style="display:flex;align-items:center;gap:8px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+                <span style="font-size:12px;font-weight:600;color:var(--text);">Instagram</span>
+              </div>
+              <span class="status-gray">Not connected</span>
+            </div>
+          </div>
+          <div class="connect-status-row" id="status-fb-3c">
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 10px;background:var(--bg);border-radius:8px;border:1px solid var(--border);">
+              <div style="display:flex;align-items:center;gap:8px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                <span style="font-size:12px;font-weight:600;color:var(--text);">Facebook</span>
+              </div>
+              <span class="status-gray">Not connected</span>
+            </div>
+          </div>
+        </div>
+        <button onclick="connectClient('3c')" style="width:100%;background:var(--black);color:#fff;font-family:var(--sans);font-size:12px;font-weight:700;padding:9px;border:none;border-radius:9px;cursor:pointer;transition:background 0.15s;display:flex;align-items:center;justify-content:center;gap:6px;" onmouseover="this.style.background='var(--sky-dark)'" onmouseout="this.style.background='var(--black)'">
+          <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 3a4 4 0 010 5.66l-1.5 1.5"/><path d="M6 13a4 4 0 010-5.66l1.5-1.5"/></svg>
+          Connect 3C Guiding
+        </button>
+      </div>
+
+      <div class="pub-card" style="padding:18px;">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
+          <div id="connect-logo-sledusa" style="width:44px;height:44px;border-radius:8px;background:var(--gray);display:flex;align-items:center;justify-content:center;overflow:hidden;border:1px solid var(--border);flex-shrink:0;"></div>
+          <div>
+            <div style="font-size:14px;font-weight:700;color:var(--text);">Sled USA</div>
+            <div style="font-size:11px;color:var(--muted);margin-top:2px;">Your own brand</div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:14px;">
+          <div class="connect-status-row" id="status-ig-sledusa">
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 10px;background:var(--bg);border-radius:8px;border:1px solid var(--border);">
+              <div style="display:flex;align-items:center;gap:8px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+                <span style="font-size:12px;font-weight:600;color:var(--text);">Instagram</span>
+              </div>
+              <span class="status-gray">Not connected</span>
+            </div>
+          </div>
+          <div class="connect-status-row" id="status-fb-sledusa">
+            <div style="display:flex;align-items:center;justify-content:space-between;padding:8px 10px;background:var(--bg);border-radius:8px;border:1px solid var(--border);">
+              <div style="display:flex;align-items:center;gap:8px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                <span style="font-size:12px;font-weight:600;color:var(--text);">Facebook</span>
+              </div>
+              <span class="status-gray">Not connected</span>
+            </div>
+          </div>
+        </div>
+        <button onclick="connectClient('sledusa')" style="width:100%;background:var(--black);color:#fff;font-family:var(--sans);font-size:12px;font-weight:700;padding:9px;border:none;border-radius:9px;cursor:pointer;transition:background 0.15s;display:flex;align-items:center;justify-content:center;gap:6px;" onmouseover="this.style.background='var(--sky-dark)'" onmouseout="this.style.background='var(--black)'">
+          <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M10 3a4 4 0 010 5.66l-1.5 1.5"/><path d="M6 13a4 4 0 010-5.66l1.5-1.5"/></svg>
+          Connect Sled USA
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- COMMENTS INBOX -->
+  <div class="tab-view" id="tab-comments">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:20px;">
+      <div class="section-head" style="margin-bottom:0"><h2>Comments inbox</h2><span class="count-badge" id="comments-count">12 new</span></div>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;">
+        <button class="filter-btn active" onclick="setCommentFilter('all',this)">All</button>
+        <button class="filter-btn" onclick="setCommentFilter('oxbow',this)">Oxbow</button>
+        <button class="filter-btn" onclick="setCommentFilter('caliber',this)">Caliber</button>
+        <button class="filter-btn" onclick="setCommentFilter('cheetah',this)">Cheetah</button>
+        <button class="filter-btn" onclick="setCommentFilter('fxgroup',this)">FX Group</button>
+        <button class="filter-btn" onclick="setCommentFilter('3c',this)">3C Guiding</button>
+        <button class="filter-btn" onclick="setCommentFilter('sledusa',this)">Sled USA</button>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 340px;gap:20px;align-items:start;">
+
+      <!-- Comment feed -->
+      <div>
+        <div style="display:flex;gap:6px;margin-bottom:12px;flex-wrap:wrap;">
+          <button class="filter-btn active" id="plat-all" onclick="setCommentPlatform('all',this)">All platforms</button>
+          <button class="filter-btn" id="plat-ig" onclick="setCommentPlatform('instagram',this)">Instagram</button>
+          <button class="filter-btn" id="plat-fb" onclick="setCommentPlatform('facebook',this)">Facebook</button>
+        </div>
+        <div id="comments-feed"></div>
+      </div>
+
+      <!-- Reply panel -->
+      <div>
+        <div class="pub-card" id="reply-panel">
+          <div class="pub-card-title"><span>💬</span> Reply</div>
+          <div id="reply-context" style="font-size:12px;color:var(--muted);margin-bottom:12px;line-height:1.6;font-style:italic;">Select a comment to reply</div>
+          <textarea id="reply-text" class="caption-area" style="min-height:80px;" placeholder="Write your reply..."></textarea>
+          <div style="display:flex;gap:8px;margin-top:10px;">
+            <button onclick="sendReply()" style="flex:1;background:var(--sky);color:#fff;font-family:var(--sans);font-size:13px;font-weight:700;padding:9px;border:none;border-radius:9px;cursor:pointer;">Send reply</button>
+            <button onclick="generateReply()" style="background:var(--sky-light);color:var(--sky-dark);font-family:var(--sans);font-size:12px;font-weight:600;padding:9px 12px;border:1px solid var(--sky-mid);border-radius:9px;cursor:pointer;">✨ AI reply</button>
+          </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="pub-card" style="margin-top:0">
+          <div class="pub-card-title"><span>📊</span> Today's activity</div>
+          <div style="display:flex;flex-direction:column;gap:8px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 10px;background:var(--bg);border-radius:8px;">
+              <span style="font-size:12px;font-weight:600;color:var(--text);">New comments</span>
+              <span style="font-size:16px;font-weight:700;color:var(--text);" id="stat-new-comments">12</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 10px;background:var(--bg);border-radius:8px;">
+              <span style="font-size:12px;font-weight:600;color:var(--text);">Replied</span>
+              <span style="font-size:16px;font-weight:700;color:var(--green);" id="stat-replied">0</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;align-items:center;padding:8px 10px;background:var(--bg);border-radius:8px;">
+              <span style="font-size:12px;font-weight:600;color:var(--text);">Dismissed</span>
+              <span style="font-size:16px;font-weight:700;color:var(--muted);" id="stat-dismissed">0</span>
+            </div>
+          </div>
+          <p style="font-size:11px;color:var(--muted);margin-top:10px;line-height:1.6">Live comment feed activates once Meta API is approved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- REPORTS -->
+  <div class="tab-view" id="tab-reports">
+
+    <!-- Toolbar -->
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:20px;">
+      <div class="section-head" style="margin-bottom:0"><h2>Reporting</h2></div>
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+        <select id="report-month" class="form-input" style="width:auto;" onchange="renderReports()">
+          <option value="4">May 2026</option>
+          <option value="3">April 2026</option>
+          <option value="2">March 2026</option>
+          <option value="1">February 2026</option>
+          <option value="0">January 2026</option>
+        </select>
+        <select id="report-client" class="form-input" style="width:auto;" onchange="renderReports()">
+          <option value="all">All clients</option>
+          <option value="oxbow">Oxbow</option>
+          <option value="caliber">Caliber</option>
+          <option value="cheetah">Cheetah Factory Racing</option>
+          <option value="fxgroup">FX Group</option>
+          <option value="3c">3C Guiding</option>
+          <option value="sledusa">Sled USA</option>
+        </select>
+        <button onclick="generateMonthlyReport()" style="background:var(--black);color:#fff;font-family:var(--sans);font-size:12px;font-weight:700;padding:8px 16px;border:none;border-radius:9px;cursor:pointer;display:flex;align-items:center;gap:6px;white-space:nowrap;" onmouseover="this.style.background='var(--sky-dark)'" onmouseout="this.style.background='var(--black)'">
+          <svg width="13" height="13" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 1l2 4h4l-3 3 1 4-4-2-4 2 1-4L2 5h4z"/></svg>
+          Generate AI Report
+        </button>
+      </div>
+    </div>
+
+    <!-- API notice -->
+    <div style="background:var(--sky-light);border:1px solid var(--sky-mid);border-radius:10px;padding:12px 16px;margin-bottom:20px;display:flex;align-items:center;gap:10px;">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="var(--sky-dark)" stroke-width="1.5" stroke-linecap="round"><circle cx="8" cy="8" r="7"/><path d="M8 5v3l2 2"/></svg>
+      <span style="font-size:12px;color:var(--sky-dark);">Showing sample data — live analytics pull from Instagram & Facebook once Meta API is approved.</span>
+    </div>
+
+    <!-- Summary stats row -->
+    <div id="report-summary-stats" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;margin-bottom:24px;"></div>
+
+    <!-- Client report cards -->
+    <div id="report-cards"></div>
+
+    <!-- AI Report output -->
+    <div id="ai-report-output" style="display:none;" class="pub-card">
+      <div class="pub-card-title"><span>📄</span> AI-Generated Monthly Report <span id="ai-report-label" style="font-size:11px;font-weight:500;color:var(--muted);"></span></div>
+      <div id="ai-report-text" style="font-size:13px;line-height:1.8;color:var(--text);white-space:pre-wrap;"></div>
+      <div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap;">
+        <button onclick="copyReport()" style="background:var(--sky);color:#fff;font-family:var(--sans);font-size:12px;font-weight:700;padding:8px 16px;border:none;border-radius:8px;cursor:pointer;">Copy report</button>
+        <button onclick="generateMonthlyReport()" style="background:var(--gray);color:var(--text2);font-family:var(--sans);font-size:12px;font-weight:600;padding:8px 16px;border:none;border-radius:8px;cursor:pointer;">Regenerate</button>
+      </div>
+    </div>
+
+  </div>
+
 
 </div></div></div>
 <!-- CLIENT EDIT MODAL -->
@@ -1215,6 +1622,521 @@ function updateRexCount() {
 }
 
 
+
+
+// ── REPORTS ──
+const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+
+const REPORT_DATA = {
+  oxbow: {
+    instagram: {
+      followers: 12400, followerChange: '+340', reach: 89200, impressions: 142000,
+      engagement: 4.8, likes: 3200, comments: 287, shares: 412, saves: 891,
+      posts: 13, reachChange: '+12%', engagementChange: '+0.4%',
+      topPosts: [
+        {caption:'Fresh powder day ❄️ Nothing beats a sled ride...', likes:892, comments:74, emoji:'🏔️'},
+        {caption:'Ambassador spotlight: meet the riders pushing...', likes:743, comments:61, emoji:'🛷'},
+        {caption:'Behind the scenes at the snowmobile program...', likes:651, comments:43, emoji:'🎥'},
+      ]
+    },
+    facebook: {
+      followers: 8900, followerChange: '+120', reach: 34000, impressions: 56000,
+      engagement: 2.1, likes: 1100, comments: 89, shares: 234,
+      posts: 13, reachChange: '+8%', engagementChange: '+0.2%',
+      topPosts: [
+        {caption:'New snowmobile season is HERE. Tag your riding...', likes:312, comments:28, emoji:'❄️'},
+        {caption:'Dirtbike ambassador program — applications open!', likes:289, comments:31, emoji:'🏍️'},
+      ]
+    }
+  },
+  caliber: {
+    instagram: {
+      followers: 11500, followerChange: '+280', reach: 76000, impressions: 118000,
+      engagement: 5.2, likes: 2900, comments: 312, shares: 389, saves: 1100,
+      posts: 12, reachChange: '+15%', engagementChange: '+0.7%',
+      topPosts: [
+        {caption:'New straps just dropped. Zero rattle, zero compromise...', likes:1204, comments:98, emoji:'🚗'},
+        {caption:'Behind the build: how our team tests every strap...', likes:876, comments:67, emoji:'🔧'},
+        {caption:'Customer build of the week — absolutely dialed...', likes:743, comments:54, emoji:'🏆'},
+      ]
+    },
+    facebook: {
+      followers: 19500, followerChange: '+210', reach: 52000, impressions: 81000,
+      engagement: 3.4, likes: 1800, comments: 143, shares: 567,
+      posts: 12, reachChange: '+11%', engagementChange: '+0.3%',
+      topPosts: [
+        {caption:'Are you using the right tie-down system? Here's why...', likes:567, comments:78, emoji:'🔩'},
+        {caption:'New product launch — see the full lineup at the link...', likes:489, comments:54, emoji:'🎉'},
+      ]
+    }
+  },
+  cheetah: {
+    instagram: {
+      followers: 7800, followerChange: '+190', reach: 54000, impressions: 89000,
+      engagement: 6.1, likes: 2100, comments: 198, shares: 312, saves: 445,
+      posts: 11, reachChange: '+18%', engagementChange: '+1.1%',
+      topPosts: [
+        {caption:'Race day is here. CFR riders are ready to send it 🏁', likes:1102, comments:94, emoji:'🏁'},
+        {caption:'Weekend recap — CFR takes podium again 🏆', likes:876, comments:71, emoji:'🏆'},
+        {caption:'New merch drop — link in bio!', likes:654, comments:43, emoji:'👕'},
+      ]
+    },
+    facebook: {
+      followers: 5400, followerChange: '+89', reach: 21000, impressions: 34000,
+      engagement: 2.8, likes: 780, comments: 67, shares: 189,
+      posts: 11, reachChange: '+9%', engagementChange: '+0.4%',
+      topPosts: [
+        {caption:'CFR at the races this weekend — full recap coming...', likes:234, comments:31, emoji:'🏍️'},
+      ]
+    }
+  },
+  fxgroup: {
+    instagram: {
+      followers: 9200, followerChange: '+145', reach: 41000, impressions: 67000,
+      engagement: 3.9, likes: 1600, comments: 134, shares: 245, saves: 567,
+      posts: 8, reachChange: '+7%', engagementChange: '+0.3%',
+      topPosts: [
+        {caption:'New UTVFX graphics kit — full wrap reveal 🔥', likes:743, comments:67, emoji:'🎨'},
+        {caption:'ArcticFX ambassador feature — meet @rider_name', likes:612, comments:54, emoji:'❄️'},
+      ]
+    },
+    facebook: null
+  },
+  '3c': {
+    instagram: {
+      followers: 4300, followerChange: '+98', reach: 28000, impressions: 43000,
+      engagement: 4.2, likes: 1100, comments: 87, shares: 178, saves: 312,
+      posts: 9, reachChange: '+14%', engagementChange: '+0.5%',
+      topPosts: [
+        {caption:'Book your guided adventure today — spots filling fast!', likes:543, comments:67, emoji:'🏔️'},
+        {caption:'Client highlight from last weekend's trip 🏕️', likes:432, comments:54, emoji:'🎿'},
+      ]
+    },
+    facebook: {
+      followers: 2800, followerChange: '+45', reach: 12000, impressions: 19000,
+      engagement: 2.3, likes: 430, comments: 34, shares: 89,
+      posts: 9, reachChange: '+6%', engagementChange: '+0.2%',
+      topPosts: [
+        {caption:'July trips are open — only 3 spots left!', likes:187, comments:23, emoji:'📅'},
+      ]
+    }
+  },
+  sledusa: {
+    instagram: {
+      followers: 28400, followerChange: '+890', reach: 234000, impressions: 412000,
+      engagement: 7.8, likes: 8900, comments: 743, shares: 2100, saves: 3400,
+      posts: 22, reachChange: '+34%', engagementChange: '+1.2%',
+      topPosts: [
+        {caption:'This clip is INSANE 😤❄️ Drop a 🔥 if you want more', likes:3402, comments:287, emoji:'🛷'},
+        {caption:'POV: First powder day of the season hits different', likes:2890, comments:234, emoji:'❄️'},
+        {caption:'Tag someone who needs to see this 👇', likes:2341, comments:198, emoji:'🔥'},
+      ]
+    },
+    facebook: {
+      followers: 14200, followerChange: '+340', reach: 89000, impressions: 145000,
+      engagement: 4.1, likes: 3400, comments: 289, shares: 1200,
+      posts: 22, reachChange: '+28%', engagementChange: '+0.8%',
+      topPosts: [
+        {caption:'Follow for more content like this! Best snowmobile page...', likes:987, comments:112, emoji:'🏔️'},
+      ]
+    },
+    tiktok: {
+      followers: 18900, followerChange: '+2100', reach: 445000, impressions: 780000,
+      engagement: 9.2, likes: 34000, comments: 1890, shares: 8900,
+      posts: 22, reachChange: '+67%', engagementChange: '+2.1%',
+      topPosts: [
+        {caption:'The craziest sled compilation of the year 🔥', likes:12400, comments:743, emoji:'🎬'},
+        {caption:'Watch till the end... 😱', likes:9800, comments:612, emoji:'👀'},
+      ]
+    }
+  }
+};
+
+function renderReports() {
+  const clientFilter = document.getElementById('report-client')?.value || 'all';
+  const monthIdx = parseInt(document.getElementById('report-month')?.value || '4');
+  const monthName = MONTHS[monthIdx];
+
+  // Summary stats
+  const statsEl = document.getElementById('report-summary-stats');
+  if (!statsEl) return;
+
+  let totalReach = 0, totalImpressions = 0, totalPosts = 0, totalEngagement = 0, count = 0;
+  const filteredClients = clientFilter === 'all' ? Object.keys(REPORT_DATA) : [clientFilter];
+
+  filteredClients.forEach(cid => {
+    const d = REPORT_DATA[cid];
+    if (!d) return;
+    ['instagram','facebook','tiktok'].forEach(plat => {
+      if (d[plat]) {
+        totalReach += d[plat].reach || 0;
+        totalImpressions += d[plat].impressions || 0;
+        totalPosts += d[plat].posts || 0;
+        totalEngagement += d[plat].engagement || 0;
+        count++;
+      }
+    });
+  });
+
+  const avgEng = count > 0 ? (totalEngagement / count).toFixed(1) : '0';
+
+  statsEl.innerHTML = `
+    <div class="summary-stat"><div class="summary-stat-label">Total reach</div><div class="summary-stat-value">${(totalReach/1000).toFixed(0)}K</div><div class="summary-stat-sub">${monthName}</div></div>
+    <div class="summary-stat"><div class="summary-stat-label">Impressions</div><div class="summary-stat-value">${(totalImpressions/1000).toFixed(0)}K</div><div class="summary-stat-sub">${monthName}</div></div>
+    <div class="summary-stat"><div class="summary-stat-label">Posts published</div><div class="summary-stat-value">${totalPosts}</div><div class="summary-stat-sub">across all platforms</div></div>
+    <div class="summary-stat"><div class="summary-stat-label">Avg engagement</div><div class="summary-stat-value">${avgEng}%</div><div class="summary-stat-sub">all platforms</div></div>
+  `;
+
+  // Client cards
+  const cardsEl = document.getElementById('report-cards');
+  cardsEl.innerHTML = '';
+
+  filteredClients.forEach(cid => {
+    const d = REPORT_DATA[cid];
+    if (!d) return;
+    const client = clients.find(c => c.id === cid);
+    if (!client) return;
+
+    const card = document.createElement('div');
+    card.className = 'report-client-card';
+
+    // Calculate totals for this client
+    let cReach = 0, cImpressions = 0, cPosts = 0;
+    ['instagram','facebook','tiktok'].forEach(p => { if(d[p]) { cReach+=d[p].reach; cImpressions+=d[p].impressions; cPosts+=d[p].posts; }});
+
+    const logoHTML = client.logoKey && LOGOS[client.logoKey]
+      ? `<img src="${LOGOS[client.logoKey]}" style="width:100%;height:100%;object-fit:contain;padding:3px;">`
+      : `<span style="font-size:14px;font-weight:700;color:var(--text2);">${client.name[0]}</span>`;
+
+    const platforms = ['instagram','facebook','tiktok'].filter(p => d[p]);
+    const platBadges = platforms.map(p => `<span style="font-size:10px;font-weight:600;padding:2px 7px;border-radius:5px;background:${p==='instagram'?'#fdf0ff':p==='facebook'?'#eff6ff':'#fff0f0'};color:${p==='instagram'?'#7c3aed':p==='facebook'?'#1d4ed8':'#dc2626'};">${p.charAt(0).toUpperCase()+p.slice(1)}</span>`).join('');
+
+    card.innerHTML = `
+      <div class="report-client-header" onclick="toggleReportCard('rc-${cid}')">
+        <div class="report-client-header-left">
+          <div class="report-client-logo" style="background:${client.logoBg==='transparent'?'var(--gray)':client.logoBg}">${logoHTML}</div>
+          <div>
+            <div class="report-client-name">${client.name}</div>
+            <div class="report-client-sub" style="display:flex;gap:4px;margin-top:4px;">${platBadges}</div>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;gap:16px;flex-shrink:0;">
+          <div style="text-align:right;">
+            <div style="font-size:13px;font-weight:700;color:var(--text);">${(cReach/1000).toFixed(0)}K reach</div>
+            <div style="font-size:11px;color:var(--muted);">${cPosts} posts</div>
+          </div>
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="var(--muted)" stroke-width="2" stroke-linecap="round" id="chevron-${cid}"><path d="M4 6l4 4 4-4"/></svg>
+        </div>
+      </div>
+      <div class="report-client-body" id="rc-${cid}">
+        ${platforms.map(plat => buildPlatformSection(d[plat], plat)).join('')}
+      </div>`;
+    cardsEl.appendChild(card);
+  });
+
+  // Hide AI report when filters change
+  document.getElementById('ai-report-output').style.display = 'none';
+}
+
+function buildPlatformSection(data, platform) {
+  if (!data) return '';
+  const platColor = platform==='instagram'?'#7c3aed':platform==='facebook'?'#1d4ed8':'#dc2626';
+  const platBg = platform==='instagram'?'#fdf0ff':platform==='facebook'?'#eff6ff':'#fff0f0';
+  const platName = platform.charAt(0).toUpperCase()+platform.slice(1);
+
+  const topPostsHTML = data.topPosts ? data.topPosts.map(p => `
+    <div class="report-post-row">
+      <div class="report-post-thumb">${p.emoji}</div>
+      <div class="report-post-info">
+        <div class="report-post-caption">${p.caption}</div>
+        <div class="report-post-stats">❤️ ${p.likes.toLocaleString()} likes · 💬 ${p.comments} comments</div>
+      </div>
+    </div>`).join('') : '';
+
+  return `
+    <div class="report-platform-section">
+      <div class="report-platform-title">
+        <span style="background:${platBg};color:${platColor};padding:2px 8px;border-radius:5px;font-size:10px;">${platName}</span>
+      </div>
+      <div class="report-metrics-grid">
+        <div class="report-metric"><div class="report-metric-label">Followers</div><div class="report-metric-value">${(data.followers/1000).toFixed(1)}K</div><div class="report-metric-change change-up">${data.followerChange} this month</div></div>
+        <div class="report-metric"><div class="report-metric-label">Reach</div><div class="report-metric-value">${(data.reach/1000).toFixed(0)}K</div><div class="report-metric-change change-up">${data.reachChange}</div></div>
+        <div class="report-metric"><div class="report-metric-label">Impressions</div><div class="report-metric-value">${(data.impressions/1000).toFixed(0)}K</div><div class="report-metric-change change-up">+</div></div>
+        <div class="report-metric"><div class="report-metric-label">Eng. rate</div><div class="report-metric-value">${data.engagement}%</div><div class="report-metric-change change-up">${data.engagementChange}</div></div>
+        <div class="report-metric"><div class="report-metric-label">Likes</div><div class="report-metric-value">${data.likes.toLocaleString()}</div><div class="report-metric-change change-up">↑</div></div>
+        <div class="report-metric"><div class="report-metric-label">Comments</div><div class="report-metric-value">${data.comments.toLocaleString()}</div><div class="report-metric-change change-up">↑</div></div>
+        ${data.shares ? `<div class="report-metric"><div class="report-metric-label">Shares</div><div class="report-metric-value">${data.shares.toLocaleString()}</div><div class="report-metric-change change-up">↑</div></div>` : ''}
+        ${data.saves ? `<div class="report-metric"><div class="report-metric-label">Saves</div><div class="report-metric-value">${data.saves.toLocaleString()}</div><div class="report-metric-change change-up">↑</div></div>` : ''}
+        <div class="report-metric"><div class="report-metric-label">Posts</div><div class="report-metric-value">${data.posts}</div><div class="report-metric-change" style="color:var(--muted);">this month</div></div>
+      </div>
+      ${topPostsHTML ? `<div class="report-top-posts"><div class="report-top-posts-title">Top posts</div>${topPostsHTML}</div>` : ''}
+    </div>`;
+}
+
+function toggleReportCard(id) {
+  const body = document.getElementById(id);
+  if (!body) return;
+  body.classList.toggle('open');
+  const cid = id.replace('rc-','');
+  const chevron = document.getElementById('chevron-'+cid);
+  if (chevron) {
+    chevron.style.transform = body.classList.contains('open') ? 'rotate(180deg)' : '';
+  }
+}
+
+async function generateMonthlyReport() {
+  const clientFilter = document.getElementById('report-client')?.value || 'all';
+  const monthIdx = parseInt(document.getElementById('report-month')?.value || '4');
+  const monthName = MONTHS[monthIdx];
+  const clientName = clientFilter === 'all' ? 'all clients' : clients.find(c=>c.id===clientFilter)?.name || clientFilter;
+
+  const outputEl = document.getElementById('ai-report-output');
+  const textEl = document.getElementById('ai-report-text');
+  const labelEl = document.getElementById('ai-report-label');
+
+  outputEl.style.display = 'block';
+  textEl.textContent = 'Generating report...';
+  labelEl.textContent = `— ${clientName} · ${monthName} 2026`;
+  outputEl.scrollIntoView({behavior:'smooth'});
+
+  // Build data summary for prompt
+  const filteredClients = clientFilter === 'all' ? Object.keys(REPORT_DATA) : [clientFilter];
+  let dataSummary = '';
+  filteredClients.forEach(cid => {
+    const d = REPORT_DATA[cid];
+    const client = clients.find(c=>c.id===cid);
+    if (!d || !client) return;
+    dataSummary += `
+${client.name}:
+`;
+    ['instagram','facebook','tiktok'].forEach(plat => {
+      if (d[plat]) {
+        dataSummary += `  ${plat}: ${d[plat].followers.toLocaleString()} followers (${d[plat].followerChange}), reach ${(d[plat].reach/1000).toFixed(0)}K (${d[plat].reachChange}), engagement ${d[plat].engagement}% (${d[plat].engagementChange}), ${d[plat].posts} posts
+`;
+      }
+    });
+  });
+
+  try {
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-20250514',
+        max_tokens: 1200,
+        system: 'You are a social media analyst writing professional monthly performance reports for a social media agency. Write clearly, highlight wins, flag areas for improvement, and give 3 specific actionable recommendations. Use a professional but approachable tone. Format with clear sections.',
+        messages: [{role:'user', content:`Write a monthly social media performance report for ${monthName} 2026 for ${clientName}.
+
+Data:
+${dataSummary}
+
+Include: Executive summary, platform-by-platform highlights, key wins, areas to improve, and 3 specific recommendations for next month.`}]
+      })
+    });
+    const data = await res.json();
+    textEl.textContent = data.content[0].text;
+  } catch(e) {
+    textEl.textContent = 'Could not generate report. Check your connection and try again.';
+  }
+}
+
+function copyReport() {
+  const text = document.getElementById('ai-report-text')?.textContent;
+  if (text) {
+    navigator.clipboard.writeText(text).then(() => alert('Report copied to clipboard!'));
+  }
+}
+
+// ── CONNECT ACCOUNTS ──
+const APP_ID = '2459010351234015';
+const REDIRECT_URI = 'https://pmg-hub.vercel.app/api/callback';
+
+function connectClient(clientId) {
+  const scope = 'instagram_basic,instagram_content_publish,instagram_manage_comments,instagram_manage_insights,pages_show_list,pages_manage_posts,pages_read_engagement,business_management';
+  const state = btoa(JSON.stringify({client: clientId}));
+  const authUrl = `https://www.facebook.com/v19.0/dialog/oauth?client_id=${APP_ID}&redirect_uri=${encodeURIComponent(REDIRECT_URI)}&scope=${scope}&state=${state}&response_type=code`;
+  
+  // For now show a preview since API review is pending
+  alert(`Connect ${clientId.toUpperCase()} flow:\n\nThis will open a Facebook login where the client authorizes PMG Hub.\n\nOnce Meta App Review is approved this button will launch the real OAuth flow.\n\nURL that will be used:\n${authUrl.slice(0,80)}...`);
+}
+
+// Populate logos on connect page
+function renderConnectLogos() {
+  clients.forEach(c => {
+    const el = document.getElementById('connect-logo-' + c.id);
+    if (!el) return;
+    if (c.logoKey && LOGOS[c.logoKey]) {
+      el.innerHTML = `<img src="${LOGOS[c.logoKey]}" style="width:40px;height:40px;object-fit:contain;padding:4px;">`;
+      el.style.background = c.logoBg === 'transparent' ? 'var(--gray)' : c.logoBg;
+    } else {
+      el.textContent = c.name[0];
+      el.style.fontWeight = '700';
+      el.style.fontSize = '16px';
+      el.style.color = 'var(--text2)';
+    }
+  });
+}
+
+// ── COMMENTS ──
+const SAMPLE_COMMENTS = [
+  {id:1,clientId:'oxbow',client:'Oxbow',account:'@powder_junkie_ig',platform:'instagram',post:'Fresh powder day reel',text:'This is absolutely insane!! Where was this filmed?? 🤯❄️',time:'2m ago',replied:false,dismissed:false},
+  {id:2,clientId:'caliber',client:'Caliber',account:'@desert_rigs',platform:'instagram',post:'New strap drop post',text:'Just ordered mine! How long does shipping take?',time:'5m ago',replied:false,dismissed:false},
+  {id:3,clientId:'cheetah',client:'Cheetah Factory Racing',account:'Racing Fan Page',platform:'facebook',post:'Race day recap',text:'CFR absolutely crushed it this weekend. Proud of the whole team!',time:'12m ago',replied:false,dismissed:false},
+  {id:4,clientId:'oxbow',client:'Oxbow',account:'@sled_life_idaho',platform:'instagram',post:'Ambassador spotlight',text:'This is my dream setup right here 🔥',time:'18m ago',replied:false,dismissed:false},
+  {id:5,clientId:'sledusa',client:'Sled USA',account:'@snowmobile_addict',platform:'instagram',post:'Viral clip repost',text:'Tag someone who needs to see this 👇',time:'24m ago',replied:false,dismissed:false},
+  {id:6,clientId:'caliber',client:'Caliber',account:'Caliber Products',platform:'facebook',post:'Behind the build video',text:'Quality looks incredible. Are these available in Canada?',time:'31m ago',replied:false,dismissed:false},
+  {id:7,clientId:'3c',client:'3C Guiding',account:'@adventure_seeker99',platform:'instagram',post:'Booking open post',text:'Is the July trip still available? Looking to bring 4 people',time:'45m ago',replied:false,dismissed:false},
+  {id:8,clientId:'cheetah',client:'Cheetah Factory Racing',account:'@moto_lifestyle',platform:'instagram',post:'CFR merch drop',text:'Need that hoodie ASAP 🙌',time:'1h ago',replied:false,dismissed:false},
+  {id:9,clientId:'sledusa',client:'Sled USA',account:'@backcountry_crew',platform:'facebook',post:'Sled USA page',text:'Follow for more content like this! Best snowmobile page on here',time:'1h ago',replied:false,dismissed:false},
+  {id:10,clientId:'oxbow',client:'Oxbow',account:'@oxbow_fan',platform:'instagram',post:'Snowmobile program post',text:'How do I apply for the ambassador program?',time:'2h ago',replied:false,dismissed:false},
+  {id:11,clientId:'fxgroup',client:'FX Group',account:'@utvfx_user',platform:'instagram',post:'UTVFX graphics reveal',text:'These graphics are fire 🔥 What is the price on the full kit?',time:'2h ago',replied:false,dismissed:false},
+  {id:12,clientId:'caliber',client:'Caliber',account:'@off_road_life',platform:'instagram',post:'Product demo video',text:'How does this compare to the competition? Looks way better',time:'3h ago',replied:false,dismissed:false},
+];
+
+let commentClientFilter = 'all';
+let commentPlatformFilter = 'all';
+let selectedComment = null;
+let repliedCount = 0;
+let dismissedCount = 0;
+
+function setCommentFilter(filter, btn) {
+  commentClientFilter = filter;
+  document.querySelectorAll('#tab-comments .filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderComments();
+}
+
+function setCommentPlatform(platform, btn) {
+  commentPlatformFilter = platform;
+  document.querySelectorAll('[id^="plat-"]').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderComments();
+}
+
+function renderComments() {
+  const feed = document.getElementById('comments-feed');
+  if (!feed) return;
+
+  let filtered = SAMPLE_COMMENTS.filter(c => {
+    if (commentClientFilter !== 'all' && c.clientId !== commentClientFilter) return false;
+    if (commentPlatformFilter !== 'all' && c.platform !== commentPlatformFilter) return false;
+    return true;
+  });
+
+  const active = filtered.filter(c => !c.dismissed);
+  const dismissed = filtered.filter(c => c.dismissed);
+
+  if (!active.length && !dismissed.length) {
+    feed.innerHTML = '<div class="empty-msg">No comments found.</div>';
+    return;
+  }
+
+  feed.innerHTML = '';
+  active.forEach(c => feed.appendChild(buildCommentCard(c)));
+  if (dismissed.length > 0) {
+    const divider = document.createElement('div');
+    divider.style.cssText = 'font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--muted);margin:16px 0 8px;';
+    divider.textContent = `Dismissed (${dismissed.length})`;
+    feed.appendChild(divider);
+    dismissed.forEach(c => feed.appendChild(buildCommentCard(c)));
+  }
+
+  // Update count
+  const newCount = SAMPLE_COMMENTS.filter(c => !c.dismissed && !c.replied).length;
+  const badge = document.getElementById('badge-comments');
+  const countEl = document.getElementById('comments-count');
+  if (badge) badge.textContent = newCount;
+  if (countEl) countEl.textContent = newCount + ' new';
+  if (document.getElementById('stat-new-comments')) document.getElementById('stat-new-comments').textContent = newCount;
+}
+
+function buildCommentCard(c) {
+  const card = document.createElement('div');
+  card.className = 'comment-card' + (c.dismissed ? ' dismissed' : '') + (selectedComment === c.id ? ' selected' : '');
+  card.onclick = () => selectComment(c.id);
+
+  const platClass = c.platform === 'instagram' ? 'plat-ig' : 'plat-fb';
+  const platLabel = c.platform === 'instagram' ? 'Instagram' : 'Facebook';
+  const client = clients.find(cl => cl.id === c.clientId);
+  const logoHTML = client && client.logoKey && LOGOS[client.logoKey]
+    ? `<img src="${LOGOS[client.logoKey]}" style="height:16px;width:auto;max-width:48px;object-fit:contain;vertical-align:middle;${client.logoBg !== 'transparent' ? 'background:' + client.logoBg + ';padding:1px;border-radius:2px;' : ''}">`
+    : `<span style="font-size:11px;font-weight:700;color:var(--text2);">${c.client}</span>`;
+
+  card.innerHTML = `
+    <div class="comment-meta">
+      <div style="display:flex;align-items:center;gap:8px;">
+        ${logoHTML}
+        <span class="comment-account">${c.account}</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:6px;">
+        <span class="comment-plat-badge ${platClass}">${platLabel}</span>
+        <span class="comment-time">${c.time}</span>
+      </div>
+    </div>
+    <div class="comment-post">On: ${c.post}</div>
+    <div class="comment-text">${c.text}</div>
+    <div class="comment-actions">
+      ${c.replied ? '<span class="replied-badge">✓ Replied</span>' : `<button class="comment-reply-btn" onclick="event.stopPropagation();selectComment(${c.id})">Reply</button>`}
+      ${!c.dismissed ? `<button class="comment-dismiss-btn" onclick="event.stopPropagation();dismissComment(${c.id})">Dismiss</button>` : '<span style="font-size:11px;color:var(--muted);">Dismissed</span>'}
+    </div>`;
+  return card;
+}
+
+function selectComment(id) {
+  selectedComment = id;
+  const c = SAMPLE_COMMENTS.find(x => x.id === id);
+  if (!c) return;
+  const ctx = document.getElementById('reply-context');
+  if (ctx) ctx.innerHTML = `<strong>${c.account}</strong> on <em>${c.post}</em>:<br>"${c.text}"`;
+  const ta = document.getElementById('reply-text');
+  if (ta) { ta.value = ''; ta.focus(); }
+  renderComments();
+}
+
+function dismissComment(id) {
+  const c = SAMPLE_COMMENTS.find(x => x.id === id);
+  if (c) { c.dismissed = true; dismissedCount++; }
+  if (document.getElementById('stat-dismissed')) document.getElementById('stat-dismissed').textContent = dismissedCount;
+  renderComments();
+}
+
+function sendReply() {
+  const text = document.getElementById('reply-text').value.trim();
+  if (!text) { alert('Write a reply first.'); return; }
+  if (!selectedComment) { alert('Select a comment first.'); return; }
+  const c = SAMPLE_COMMENTS.find(x => x.id === selectedComment);
+  if (c) { c.replied = true; repliedCount++; }
+  if (document.getElementById('stat-replied')) document.getElementById('stat-replied').textContent = repliedCount;
+  document.getElementById('reply-text').value = '';
+  document.getElementById('reply-context').innerHTML = 'Reply sent! Select another comment to reply.';
+  selectedComment = null;
+  renderComments();
+  alert('✅ Reply queued!\n\nNote: Live replies activate once Meta API is approved.');
+}
+
+async function generateReply() {
+  if (!selectedComment) { alert('Select a comment first.'); return; }
+  const c = SAMPLE_COMMENTS.find(x => x.id === selectedComment);
+  if (!c) return;
+  const btn = document.querySelector('[onclick="generateReply()"]');
+  btn.textContent = '⏳ Thinking...'; btn.disabled = true;
+  try {
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-20250514',
+        max_tokens: 150,
+        system: 'You are a social media manager writing short, friendly, on-brand replies to Instagram and Facebook comments. Keep replies under 2 sentences. Be genuine and engaging. No hashtags. No emojis unless appropriate.',
+        messages: [{role: 'user', content: `Write a reply to this comment on a post for ${c.client}:\n\nComment: "${c.text}"\n\nWrite only the reply text, nothing else.`}]
+      })
+    });
+    const data = await res.json();
+    document.getElementById('reply-text').value = data.content[0].text;
+  } catch(e) { alert('Could not generate reply. Try again.'); }
+  btn.textContent = '✨ AI reply'; btn.disabled = false;
+}
+
 // ── CALENDAR ──
 let calYear = new Date().getFullYear();
 let calMonth = new Date().getMonth(); // 0-indexed
@@ -1460,6 +2382,9 @@ function switchTab(name){
   });
   if(name==='clients'){renderTaskBoard();}
   if(name==='calendar'){renderCalendar();}
+  if(name==='comments'){renderComments();}
+  if(name==='connect'){renderConnectLogos();}
+  if(name==='reports'){renderReports();}
 }
 
 // Set default datetime to tomorrow 9am
@@ -1469,7 +2394,7 @@ if(dtInput)dtInput.value=tmr.toISOString().slice(0,16);
 
 if(document.getElementById('qa-day'))document.getElementById('qa-day').value=getToday();
 document.getElementById('live-date').textContent=new Date().toLocaleDateString('en-US',{weekday:'long',month:'long',day:'numeric'});
-renderClients();renderClientPills();renderToday();updateStats();renderScheduledQueue();renderRex();renderTaskBoard();
+renderClients();renderClientPills();renderToday();updateStats();renderScheduledQueue();renderRex();renderTaskBoard();renderConnectLogos();
 </script>
 </body>
 </html>
