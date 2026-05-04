@@ -433,7 +433,7 @@
     <div class="login-form">
       <div class="login-input-wrap">
         <input class="login-input" type="password" id="login-pw" placeholder="Password" onkeydown="if(event.key==='Enter')doLogin()">
-        <button class="login-eye" onclick="toggleEye()">👁</button>
+        <button class="login-eye" id="login-eye-btn" onclick="toggleEye()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" stroke-linecap="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg></button>
       </div>
       <div class="login-error" id="login-err"></div>
       <button class="login-btn" onclick="doLogin()">Enter Hub</button>
@@ -1115,7 +1115,17 @@ function doLogin(){
   if(v===PW){sessionStorage.setItem(SK,'1');document.getElementById('login-screen').classList.add('hidden');}
   else{const e=document.getElementById('login-err');e.textContent='Incorrect password.';document.getElementById('login-pw').value='';document.getElementById('login-pw').focus();setTimeout(()=>e.textContent='',2000);}
 }
-function toggleEye(){const i=document.getElementById('login-pw');const b=document.querySelector('.login-eye');i.type=i.type==='password'?'text':'password';b.textContent=i.type==='password'?'👁':'🙈';}
+function toggleEye(){
+  const i=document.getElementById('login-pw');
+  const b=document.getElementById('login-eye-btn');
+  if(i.type==='password'){
+    i.type='text';
+    b.innerHTML='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" stroke-linecap="round"><path d="M17.94 17.94A10.07 10.07 0 0112 20c-7 0-11-8-11-8a18.45 18.45 0 015.06-5.94M9.9 4.24A9.12 9.12 0 0112 4c7 0 11 8 11 8a18.5 18.5 0 01-2.16 3.19m-6.72-1.07a3 3 0 11-4.24-4.24"/><line x1="1" y1="1" x2="23" y2="23"/></svg>';
+  } else {
+    i.type='password';
+    b.innerHTML='<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="2" stroke-linecap="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>';
+  }
+}
 if(sessionStorage.getItem(SK)==='1')document.getElementById('login-screen').classList.add('hidden');
 else setTimeout(()=>document.getElementById('login-pw').focus(),100);
 
