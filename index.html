@@ -431,9 +431,9 @@
     <div class="login-sub">Private Hub</div>
     <div class="login-divider"></div>
     <div class="login-form">
-      <div class="login-input-wrap">
-        <input class="login-input" type="password" id="login-pw" placeholder="Password" onkeydown="if(event.key==='Enter')doLogin()">
-        <button class="login-eye" id="login-eye-btn" onclick="toggleEye()" style="position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:rgba(255,255,255,0.5);font-size:18px;padding:4px;z-index:10;">👁</button>
+      <div style="position:relative;width:100%;">
+        <input style="width:100%;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:12px;color:#fff;font-family:var(--sans);font-size:15px;padding:13px 48px 13px 16px;outline:none;letter-spacing:0.06em;" type="password" id="login-pw" placeholder="Password" onkeydown="if(event.key==='Enter')doLogin()">
+        <button onclick="toggleEye()" type="button" style="position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:rgba(255,255,255,0.5);font-size:18px;padding:4px;line-height:1;" id="eye-btn">👁</button>
       </div>
       <div class="login-error" id="login-err"></div>
       <button class="login-btn" onclick="doLogin()">Enter Hub</button>
@@ -1115,13 +1115,7 @@ function doLogin(){
   if(v===PW){sessionStorage.setItem(SK,'1');document.getElementById('login-screen').classList.add('hidden');}
   else{const e=document.getElementById('login-err');e.textContent='Incorrect password.';document.getElementById('login-pw').value='';document.getElementById('login-pw').focus();setTimeout(()=>e.textContent='',2000);}
 }
-function toggleEye(){
-  const i=document.getElementById('login-pw');
-  const b=document.getElementById('login-eye-btn');
-  if(i.type==='password'){
-    i.type='text';
-    b.textContent='🙈';
-  } else {
+function toggleEye(){var i=document.getElementById('login-pw');var b=document.getElementById('eye-btn');if(i.type==='password'){i.type='text';b.textContent='🙈';}else{i.type='password';b.textContent='👁';}} else {
     i.type='password';
     b.textContent='👁';
   }
