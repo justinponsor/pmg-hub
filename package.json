@@ -1,0 +1,10 @@
+{
+  "name": "pmg-hub",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "replicate": "^0.29.0",
+    "formidable": "^3.5.1",
+    "@supabase/supabase-js": "^2.39.0"
+  }
+}
