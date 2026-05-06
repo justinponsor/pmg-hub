@@ -1,0 +1,7 @@
+{
+  "functions": {
+    "api/axel-create.js": {
+      "maxDuration": 300
+    }
+  }
+}
